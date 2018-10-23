@@ -8,5 +8,5 @@ clean:
 quit:
 	osascript -e 'quit app "Xcode"'
 test:
-	- xcodebuild -scheme ${POD_NAME}-Example -workspace Example/${POD_NAME}.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone Xs,OS=12.0' build test
+	xcodebuild -scheme ${POD_NAME}-Example -workspace Example/${POD_NAME}.xcworkspace -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone Xs,OS=12.0' build test
 	
