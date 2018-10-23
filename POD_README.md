@@ -7,7 +7,29 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo, and run `make` from the root directory first.
+
+There are some script help you develop and PR.
+
+```make
+# install dependence and open project
+make
+
+# install dependence
+make install
+
+# build test
+make test
+
+# open project
+make open
+
+# quit Xcode
+make quit
+
+```
+
+Before you pull request, make sure test success.
 
 ## Requirements
 
