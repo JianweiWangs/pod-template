@@ -54,7 +54,7 @@ module Pod
       # or a framework won't be created
       `touch Pod/Classes/ReplaceMe.swift`
       File.open('Pod/Classes/ReplaceMe.swift', 'w') do |file|
-        file.puts 'hello'
+        file.puts "public func test() -> Bool {\n\treturn true\n}"
       end
 
       # The Podspec should be 8.0 instead of 7.0
