@@ -53,7 +53,7 @@ module Pod
       # There has to be a single file in the Classes dir
       # or a framework won't be created
       `touch Pod/Classes/ReplaceMe.swift`
-      File.open('Pod/Classes/ReplaceMe.swift') do |file|
+      File.open('Pod/Classes/ReplaceMe.swift', 'w') do |file|
         file.puts 'hello'
       end
 
