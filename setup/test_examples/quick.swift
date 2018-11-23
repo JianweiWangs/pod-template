@@ -6,8 +6,10 @@ import PROJECT
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
-
+        describe("these will success") {
+                it("test", closure: {
+                        expect(test()) == true
+                 })
         }
     }
 }
